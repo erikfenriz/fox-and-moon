@@ -1,0 +1,67 @@
+noStroke();
+var bodyX = 191;
+var bodyY = 217;
+var bodyW = 117;
+var bodyH = bodyW/2;
+   var c=10;
+   var d=66;
+   var k=-380;
+
+draw = function() {
+    background(5, 40, 56);
+    fill(255, 255, 255);
+    ellipse(d,59,70,70);//luna
+    fill(5, 40, 56);
+    ellipse(d+17,59,70,70);//ten`
+    
+    d = d+1; 
+    fill(255, 255, 255);
+    ellipse(k,59,70,70);//luna
+    fill(5, 40, 56);
+    ellipse(k+17,59,70,70);//ten`
+    k = k+1;
+   
+    
+    fill(214, 93, 0);
+    triangle(322,280,208,386,315,203);
+    fill(242, 168, 111);
+    triangle(323,280,378,170,315,204);
+    fill(230, 145, 80);
+    ellipse(191,303,104,213);
+
+    ellipse(bodyX, bodyY, bodyW, 108); // body?
+    fill(181, 78, 0);
+    fill(232, 155, 96);
+     fill(163, 75, 8);
+     triangle(247,204,280,154,218,185);
+      
+       fill(242, 168, 111);
+     triangle(215,204,280,154,218,185);
+     fill(163, 71, 0);
+     triangle(165,186,100,155,135,200);
+     fill(242, 168, 111);
+     
+    triangle(166,187,100,155,173,205);
+    
+    triangle(192,298,243,244,140,245);
+     fill(5, 5, 5);
+     triangle(192,298,204,287,180,287);
+    
+    fill(219, 95, 0);
+    rect(159,327,12,249);
+       rect(209,327,12,249);
+       
+       
+    
+       
+   
+     
+        
+        fill(0, 0, 0);
+        ellipse(163,219,10,c);
+    ellipse(221,219,10,c);
+    
+   
+    
+    
+};
