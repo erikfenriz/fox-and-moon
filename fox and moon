@@ -4,10 +4,11 @@ var bodyY = 217;
 var bodyW = 117;
 var bodyH = bodyW/2;
    var c=10;
-   var d=66;
-   var k=-380;
+   var d=66; //66 / crest moon
+   var k=-380; //-380 lune full
 
 draw = function() {
+
     background(5, 40, 56);
     fill(255, 255, 255);
     ellipse(d,59,70,70);//luna
@@ -18,9 +19,10 @@ draw = function() {
     fill(255, 255, 255);
     ellipse(k,59,70,70);//luna
     fill(5, 40, 56);
-    ellipse(k+17,59,70,70);//ten`
+    ellipse(k+17,185,70,70);//ten`
     k = k+1;
-   
+    
+
     
     fill(214, 93, 0);
     triangle(322,280,208,386,315,203);
@@ -51,17 +53,19 @@ draw = function() {
     rect(159,327,12,249);
        rect(209,327,12,249);
        
-       
-    
-       
    
-     
-        
-        fill(0, 0, 0);
-        ellipse(163,219,10,c);
+
+     fill(0, 0, 0);
+   ellipse(163,219,10,c - 9);
+    ellipse(221,219,10,c - 9);
+   
+
+     if (mouseIsPressed) {
+      fill(0, 0, 0);
+  ellipse(163,219,10,c);
     ellipse(221,219,10,c);
-    
-   
-    
-    
+     }
+
 };
+
+
